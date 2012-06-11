@@ -6,15 +6,11 @@ class Increment
 
   def self.update(file='counter.txt')
 
-    i = '1'
-    
     if File.exists? file then
       File.open(file, 'r+'){|f| i = f.read.succ; f.rewind; f.write i}
     else
-      File.open(file,'w'){|f| f.write i}
+      File.open(file,'w'){|f| f.write '1'}
     end
-    
-    return i
   end
 
 end

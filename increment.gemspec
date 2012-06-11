@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'increment'
-  s.version = '0.1.1'
+  s.version = '0.1.2'
   s.summary = 'Increments the value of a number in a text file'
   s.authors = ['James Robertson']
   s.files = Dir['lib/**/*.rb']
